@@ -1,0 +1,153 @@
+/*
+    So you like the style of impress.js demo?
+    Or maybe you are just curious how it was done?
+
+    You couldn't find a better place to find out!
+
+    Welcome to the stylesheet impress.js demo presentation.
+
+    Please remember that it is not meant to be a part of impress.js and is
+    not required by impress.js.
+    I expect that anyone creating a presentation for impress.js would create
+    their own set of styles.
+
+    But feel free to read through it and learn how to get the most of what
+    impress.js provides.
+
+    And let me be your guide.
+
+    Shall we begin?
+*/
+
+
+/*
+    We start with a good ol' reset.
+    That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
+
+    You can probably argue if it is needed here, or not, but for sure it
+    doesn't do any harm and gives us a fresh start.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+    Now here is when interesting things start to appear.
+
+    We set up <body> styles with default font and nice gradient in the background.
+    And yes, there is a lot of repetition there because of -prefixes but we don't
+    want to leave anybody behind.
+*/
+
+
+
+
+/* Sophias code begins here*/
+
+body{
+                background: white;
+/*
+                background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(242, 229, 187)), to(rgb(190, 190, 190)));
+                background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+                background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+                background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+                background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+                background:         radial-gradient(rgb(248, 247, 243), rgb(252, 220, 160));
+*/
+            }
+
+            
+            /*
+            The first step is an overview.
+            There is no content in it, so we make sure it's not visible because we want
+            to be able to click on other steps.
+            #overview { display: none }
+
+            */
+            
+
+            /*
+                We also make other steps visible and give them a pointer cursor using the
+                `impress-on-` class.
+            */
+            .impress-on-overview .step {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            
+            .flag {
+                position:relative; 
+                width:304px; 
+                height:190px;
+            }
+            
+            .hobbies {
+                border:none;
+                width:504px; 
+                height:300px;
+                background-size: 504px 300px;
+                box-shadow: 0px 0px 50px 20px white inset;
+            }
+            
+            .education{
+               border:none;
+                width:400px; 
+                height:400px;
+                background-size: 400px 400px;
+                box-shadow: 0px 0px 50px 20px white inset; 
+            }
+            
+            .blurryedge {
+                box-shadow: 0 0 50px 20px white inset;
+                border:none;
+            }
+            
+            
+            .hide{
+                opacity: 0;
+            }
+            
